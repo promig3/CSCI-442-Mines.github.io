@@ -69,6 +69,7 @@ export default defineConfig({
       {link: "/", text: "Home"},
       {link: "/student-environment", text: "Student Environment"},
       {link: "/github-repository-setup", text: "Creating Your Project Repository"},
+      {link: "/per-project-setup", text: "Per-Project Setup"},
     ],
     outline: {
       level: [1, 3],
@@ -84,6 +85,10 @@ export default defineConfig({
       {
         link: "/github-repository-setup",
         text: "Creating Your Project Repository",
+      },
+      {
+        link: "/per-project-setup",
+        text: "Per-Project Setup",
       },
     ],
     socialLinks: [
