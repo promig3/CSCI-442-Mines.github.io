@@ -216,10 +216,12 @@ Failure to follow the instructions in this section **exactly** as presented may 
 your source code!
 :::
 
-For each project in this course, you will need to accept the GitHub Classroom assignment
-(in Canvas). This will create a new private repository just for you under the `csci-442-mines`
-GitHub organization based on the project template. Then, start the dev container by following
-any **one** of the following methods:
+For each project in this course, you will first need to create your own private repository from
+the project's starter template by following the
+[Creating Your Project Repository](/github-repository-setup) instructions. Once you have your
+repository, you will need to clone it. This will create a copy of the starter code and
+instructions on your local machine. For best results clone the repository from inside the dev
+container using **one** of the following methods:
 
 1. (Recommended) Open VS Code, select `File > Open Recent`: ![Open recent dropdown](./student-environment/vscode-open-recent-dropdown.png) and
    then select the `PATH_TO_DIRECTORY/student-env [Dev Container]` (Where `PATH_TO_DIRECTORY` is the
@@ -244,14 +246,15 @@ Once VS Code has opened/changed to the `/workspace/` directory, open the integra
 run the following command to clone your project repository:
 
 ```shell
-git clone PERSONAL_PROJECT_REPOSITORY_URL
+git clone PROJECT_REPOSITORY_URL
 ```
 
-Where `PERSONAL_PROJECT_REPOSITORY_URL` is the URL of your personal project repository (e.g.:
-`https://github.com/csci-442-mines/sp25-project-1-ghost.git` if using HTTPS, or
-`git@github.com:CSCI-442-Mines/sp25-project-1-ghost.git` if using SSH). You can find this URL by
-going to the GitHub Classroom assignment page, opening your repository, and clicking on the green
-`Code` button, and selecting the appropriate protocol.
+Where `PROJECT_REPOSITORY_URL` is the URL of **your own** project repository (e.g.:
+`https://github.com/USERNAME/project-1-USERNAME.git` if using HTTPS, or
+`git@github.com:USERNAME/project-1-USERNAME.git` if using SSH, where `USERNAME` is your GitHub
+username). You can find this URL by following the
+[Find Your Repository URL](/github-repository-setup#find-your-repository-url) step of the
+[Creating Your Project Repository](/github-repository-setup) instructions.
 
 Once the repository is cloned, open the project-specific `*.code-workspace` file (e.g.:
 `project-1.code-workspace`) by clicking on it in the file explorer. You should see a popup

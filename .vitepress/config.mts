@@ -68,6 +68,7 @@ export default defineConfig({
     nav: [
       {link: "/", text: "Home"},
       {link: "/student-environment", text: "Student Environment"},
+      {link: "/github-repository-setup", text: "Creating Your Project Repository"},
     ],
     outline: {
       level: [1, 3],
@@ -79,6 +80,10 @@ export default defineConfig({
       {
         link: "/student-environment",
         text: "Student Environment",
+      },
+      {
+        link: "/github-repository-setup",
+        text: "Creating Your Project Repository",
       },
     ],
     socialLinks: [
