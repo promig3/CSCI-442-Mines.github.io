@@ -62,6 +62,43 @@ Keep this URL handy! You'll use it as `PROJECT_REPOSITORY_URL` when cloning your
 [Per-Project Setup](/student-environment#per-project-setup) section.
 :::
 
+## Clone Your Repository Inside the Dev Container
+
+::: warning
+This step assumes you already have the course dev container set up and running. If you haven't
+done this yet, follow the [Setup Instructions](/student-environment#setup-instructions) on the
+Student Environment page first.
+:::
+
+Now that you have your own repository, you need to create a local copy of it inside your dev
+container so you can start working on it.
+
+1. Open the dev container in VS Code, and make sure the top level of the `/workspace/` directory
+   is open, following the same steps described at the start of the
+   [Per-Project Setup](/student-environment#per-project-setup) section.
+2. Open the **<u>integrated</u>** terminal (Not the <u>system</u> terminal) by selecting
+   `Terminal > New Terminal` from the top menu.
+3. In the integrated terminal, run the following command to clone your repository:
+
+   ```shell
+   git clone PROJECT_REPOSITORY_URL
+   ```
+
+   Where `PROJECT_REPOSITORY_URL` is the URL you copied in the
+   [Find Your Repository URL](#find-your-repository-url) section above.
+4. Once the command finishes, you should see a new directory named after your repository (e.g.:
+   `project-1-ghost`) inside `/workspace/`.
+5. As you work on the project, remember to periodically commit and push your changes (e.g.:
+   `git add`, `git commit`, and `git push`). Committing and pushing often protects your work in
+   case something happens to your dev container, and gives you a history of checkpoints you can
+   go back to if you need to.
+
+::: tip
+Continue with the rest of the [Per-Project Setup](/student-environment#per-project-setup)
+instructions to open the project-specific `*.code-workspace` file and install the recommended
+extensions.
+:::
+
 ## Common Issues
 
 ### Accidentally Created a Public Repository
