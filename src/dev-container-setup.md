@@ -1,105 +1,12 @@
-# Student Environment
+# Setup the Course Dev Container
 
 ::: info
-This page contains instructions for setting up your development environment for this course. While
-there's a lot information here, it **shouldn't take more than about 30 minutes to complete**
-(depending on your internet connection). If you have any issues, please reach out to the course
-staff for help.
+This page contains instructions for setting up the course dev container and configuring Git
+inside of it. You will set this up **once** and reuse it for every project in this course.
 :::
-
-## What are Docker/Dev Containers?
-
-Docker is a tool that allows you to easily run software in an isolated, reproducible environment in
-the form of a container. Dev containers build on top of Docker containers, integrating with code
-editors like Visual Studio Code to provide a seamless development experience. We will use Docker dev
-containers in this course to provide a consistent baseline environment for students and instructors
-alike, with all the necessary tools and libraries pre-installed!
-
-## Setup Instructions
-
-Complete the following steps, in order, to set up your development environment for this course:
-
-::: tip
-If you already have Docker installed and verified it is working (`docker run hello-world`), you can
-skip this step.
-:::
-
-First, you will need to install Docker on your computer. Follow the instructions for your operating
-system below:
-
-- **Windows**: [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
-  - We recommend using the WSL 2 backend for Docker Desktop on Windows.
-- **Mac**: [Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/install/)
-- **Linux**: [Docker Engine for Linux](https://docs.docker.com/engine/install/)
-  - We strongly **do not recommend** using the Docker snap package nor the Docker Desktop
-    application on Linux.
-  - Make sure to also complete the [post-installation steps for Linux](https://docs.docker.com/engine/install/linux-postinstall/).
-
-::: warning
-If you are running Docker Engine on Linux, because the [Docker daemon runs as root by default](https://docs.docker.com/engine/security/rootless/),
-you can cause damage to your system if you run commands in the dev container as root (i.e.: with
-`sudo`) carelessly. As always, practice safe computing and only run commands you understand.
-:::
-
-Once this is complete, please open your system's terminal for your operating system below:
-
-- **Windows**: Open CMD or PowerShell
-  - Do not use Git Bash, WSL, Cygwin, MinGW, or any other terminal emulator.
-- **Mac**: Open Terminal
-- **Linux**: Open Terminal
-
-_Note: when we refer to the **<u>system</u> terminal** in these instructions, we mean the terminal
-for your operating system as described above._
-
-Then, run the following command to verify that Docker is installed correctly:
-
-```shell
-docker run hello-world
-```
-
-You should see a message that says:
-
-```
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-...
-```
-
-If you see this message, Docker is installed correctly and you can proceed to the next step. If you
-encounter any issues, please double-check you've read everything above and try again. If you still
-have issues, please reach out to the course staff for help.
-
-### Install VS Code (Visual Studio Code)
-
-::: tip
-If you already have VS Code installed, you can skip this step. Note that Visual Studio and Visual
-Studio <u>Code</u> are different code editors, both made by Microsoft.
-:::
-
-We recommend using Visual Studio Code (VS Code) as your code editor for this course. You can
-download it for free from [here](https://code.visualstudio.com/).
-
-### Install VS Code Extensions
-
-Once you have installed VS Code, you will need to install the following extensions:
-
-- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-::: tip
-If you are not familiar with how to install extensions in VS Code, you can follow
-[these](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-an-extension)
-detailed instructions, but in short, you can click on the extensions icon in the left sidebar:
-
-![Extensions sidebar](./student-environment/vscode-extensions-sidebar.png)
-
-Then, search for the desired extension, click on the Install button, and wait for the installation
-to complete.
-:::
-
-### Setup the Course Dev Container
 
 ::: danger
-Failure to follow the instructions in this section **exactly** as presented may result in
+Failure to follow the instructions on this page **exactly** as presented may result in
 permanently losing your work for this course! You have been warned!
 :::
 
@@ -127,6 +34,9 @@ To set up the course dev container, first download [this](https://github.com/csc
 file and extract it to a directory of your choice (Somewhere that is easy to access and safe from
 accidental deletion). Then, open the top level of extracted directory in VS Code by any **one** of
 the following methods:
+
+_Note: when we refer to the **<u>system</u> terminal** below, we mean your operating system's
+terminal, as described on the [Install Docker](/install-docker) page._
 
 1. (Recommended) Open VS Code and select `File > Open Folder...`: ![Open folder dropdown](./student-environment/vscode-open-folder-dropdown.png)
    Then, navigate to the directory where you extracted the course dev container. You should see VS
@@ -168,7 +78,7 @@ Do not proceed past this point until you have verified that the dev container is
 save your work!
 :::
 
-### Setup Git Inside the Dev Container
+## Setup Git Inside the Dev Container
 
 First, configure Git with your name and email address by running the following commands in the
 integrated terminal:
@@ -250,8 +160,4 @@ for each project in this course.
   bottom right corner of the window or by opening the command palette (`CTRL+SHIFT+P` or
   `CMD+SHIFT+P` on Mac) and typing `Dev Containers: Rebuild Container`.
 
-::: tip
-Running into issues cloning or opening a project repository? See the
-[Common Issues](/per-project-setup#common-issues) section of the
-[Per-Project Setup](/per-project-setup) page.
-:::
+_This page created with the help of Claude AI._
