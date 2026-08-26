@@ -136,3 +136,5 @@ and the repository exists.
   open the project-specific `*.code-workspace` file (e.g.: `project-1.code-workspace`) without
   first opening the course dev container (or in different dev container), the debug configurations
   and/or tools will be missing.
+####
+This page was created with the help of Claude Code
